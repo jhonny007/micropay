@@ -38,7 +38,7 @@ The use cases have two participants (Person A and B) and a total amount of 25 cr
               Person A gets back 7 credits from Person B
 
     Step 3    14 C                         1 C
-        			          10 OPCN 
+                                          10 OPCN 
 
 
 ### UC3 - print a credit note
@@ -102,14 +102,14 @@ The amount of an SPCN can be a fraction of OPCNs.
 Graphical User Interface
 ------------------------
 
-                  10 C
-Picture/Logo     ------>    Picture/Logo
-Sender                      Receiver
-id person A                 id person B
-business volume             business volume
-current total               current total
+                      10 C
+    Picture/Logo     ------>    Picture/Logo
+    Sender                      Receiver
+    id person A                 id person B
+    business volume             business volume
+    current total               current total
 
-button send credits
+    button send credits
 
 
 Security
@@ -198,15 +198,15 @@ Circulation stimulus:
     10 C -> 0,25 C = 10%/year
      5 C -> 0,10 C = 8%/year
 -> every day at midnight for credit or when placed on deposit for all days since SPCN was printed
-      1 -    10 C -> 0 C 
-     10 -   100 C -> 0,0003C/C = 10,95 %
-    100 -   500 C -> 0,0004C/C = 
-    500 -  1000 C -> 0,0005C/C = 
-   1000 - 10000 C -> 0,0006C/C = 
+       1 -    10 C -> 0 C 
+      10 -   100 C -> 0,0003C/C = 10,95 %
+     100 -   500 C -> 0,0004C/C = 14,60 %
+     500 -  1000 C -> 0,0005C/C = 18,25 %
+    1000 - 10000 C -> 0,0006C/C = 21,90 %
 
 Exceptions:
-- only the credits above the business volume of the day is included in the calculation.
-- if you give someone a loan (in steps of 500) this diminishes the amount from the higher end.
+ - only the credits above the business volume of the day is included in the calculation.
+ - if you give someone a loan (in steps of 500) this diminishes the amount from the higher end.
 => Examples
     person|credits|businessVolume|loan|lower limit|upper limit|circulation stimulus|
     A     |   1499|           600| 500|        500|        499|                   0|
