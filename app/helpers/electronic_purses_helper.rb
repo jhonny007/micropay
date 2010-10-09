@@ -1,0 +1,2 @@
+module ElectronicPursesHelper
+end

@@ -1,0 +1,15 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <b>Credit:</b>
+  <%= @electronic_purse.credit %>
+</p>
+
+<p>
+  <b>User:</b>
+  <%= @electronic_purse.user_id %>
+</p>
+
+
+<%= link_to 'Edit', edit_electronic_purse_path(@electronic_purse) %> |
+<%= link_to 'Back', electronic_purses_path %>

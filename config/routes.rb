@@ -1,4 +1,10 @@
 Micropay::Application.routes.draw do
+  resources :microposts
+
+  resources :electronic_purses
+
+  resources :users
+
   # The priority is based upon order of creation:
   # first created -> highest priority.
 
