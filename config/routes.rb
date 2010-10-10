@@ -1,19 +1,15 @@
 Micropay::Application.routes.draw do
+  resources :microposts
+  resources :electronic_purses
+  resources :users
 
-  get "users/new"
-
-  match '/signup', :to => 'users#new'
+  match '/signup',  :to => 'users#new'
   match '/contact', :to => 'pages#contact'
   match '/about',   :to => 'pages#about'
   match '/help',    :to => 'pages#help'
 
   root :to => "pages#home"
 
-  resources :microposts
-
-  resources :electronic_purses
-
-  resources :users
 
   # The priority is based upon order of creation:
   # first created -> highest priority.
