@@ -1,13 +1,28 @@
+# == Schema Information
+# Schema version: <timestamp>
+#
+# Table name: users
+#
+#  id         :integer         not null, primary key
+#  name       :string(255)
+#  email      :string(255)
+#  created_at :datetime
+#  updated_at :datetime
+#
+
 class User < ActiveRecord::Base
   has_many :microposts
   has_one  :electronic_purse
 
-  attr_accessor :name, :email
+  attr_accessible :name, :email
 
-  def initialize(attributes = {})
-    @name  = attributes[:name]
-    @email = attributes[:email]
-  end
+  email_regex = /\A[\w+\-.]+@[a-z\d\-.]+\.[a-z]+\z/i
+
+  validates :name,  :presence 	=> true,
+                    :length   	=> { :maximum => 50 }
+  validates :email, :presence 	=> true,
+                    :format   	=> { :with => email_regex },
+                    :uniqueness => { :case_sensitive => false }
 
   def formatted_email
     "#{@name} <#{@email}>"
