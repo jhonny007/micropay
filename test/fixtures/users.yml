@@ -12,10 +12,10 @@
 
 # Read about fixtures at http://ar.rubyonrails.org/classes/Fixtures.html
 
-one:
-  name: MyString
-  email: MyString
+#one:
+#  name: Christian Gruber
+#  email: christian.gruber@web.de
 
-two:
-  name: MyString
-  email: MyString
+#two:
+#  name: Gregor Gruber
+#  email: gregor.gruber@web.de
