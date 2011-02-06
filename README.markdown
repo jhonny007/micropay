@@ -60,7 +60,7 @@ The use cases have two participants (Person A and B) and a total amount of 25 cr
 
     Step 2    Person A buys something from Person B and gives him his printed credit note of value 10
 
-    Step 3     4C                          1 C
+    Step 3     4 C                         1 C
                                           10 OPCN
                                           10 SPCN (A)
 
@@ -118,7 +118,7 @@ Security
  * Dealing with small amounts of money.
  * Regional users.
  * Costs should be kept to a minimum.
- * Make all users public.
+ * Make all users public. Photo and Name.
  * Make the electronic purse balance public up to 100 C (e.g. `?.???.?56,479 C`)
 Conclusion: *Keep it simple*.
 
@@ -127,10 +127,11 @@ Implementation Notes
 
  * Central platform 
  * support mobile devices (web-browsers)
- * Securing a SPCN with a barcode (like tickes of deutsch bahn)
+ * Securing a SPCN with a barcode (like tickes of deutsch bahn) and data of both (including picture)
  * Quantity structure:
  * 1 million participants with 2 trades a day between 6:00 and 21:00 -> 37 transactions/second
- * If each payment takes 15 seconds we have 555 concurrent users.  
+ * If each payment takes 15 seconds we have 555 concurrent users.
+ * audit proof  
 
 ### Iteration 1
 
@@ -170,13 +171,14 @@ Each new participant needs a certain amount of money to participate in trading (
 -> The club fee should be equal to that amount.
 
 ### Idea 3:
-Back the currency with silver or/and gold. Price: Silver: ~500Euro/kilo Gold: 1000Euro/kilo
--> no dependency to a currency
-Possibility 1:
-=> the corresponding weight can be different to each participant - probably he wants his silver/gold back.
-=> there is an average weight for each credit
-Possibility 2:
-=> price fixing 1 credit is 1 gram gold or 2 gram silver
+Take gold and silver as securities.(1 troy ounce = 31,1035g)
+Price: Silver: ~20Euro/troy ounce Gold: ~1000Euro/troy ounce
+-> commodities are the currencies
+=> 1 gold credit (GC) is 1 gram gold and 1 silver credit (SC) is 1 gram silver
+=> a specialized pawnshop gives the credit for the given security (see PfandlV).
+=> a fee must ensure the insurance payments for the gold an silver stored.(preferable in per cent
+of the stored commodities.
+=> 
 
 ### Idea 4:
 Let the payment platform produce its own money:
@@ -217,6 +219,35 @@ Exceptions:
 Exchange for other commodities/energy
 -> no idea - ask Kuno again
 
+### Idea 9:
+Create own bank.
+ - account balances over HBCI?
+ - There is a client app for iPad that can display balances of all different online banking accounts created by [Star Finanz](http://www.starfinanz.de) and is available for different bank brandings (comdirect, sparkasse)
+ - There is HBCI server implemented in java (I asked for the sources) [hbci4java](http://hbci4java.kapott.org)
+
+### Idea 10:
+Include a rating and new ideas for:
+ - the paymentprocess
+ - the other party in the payment process (build your own reputation)
+ 
+### Idea 11:
+Franchise the pawnshops.
+ - vault
+ - documents
+ - ...
+
+### Idea 12:
+Loans are given personally or by the gouvernment.
+The risk holds the lender.
+
+GUI:
+
+    o rate the transaction process
+      o easy  o cumbersome o ...
+    o rate the other party
+      - friendliness
+      - ...
+
 Abbreviations
 -------------
 
@@ -228,13 +259,16 @@ Abbreviations
 Translations
 ------------
 
+    audit proof          revisionssicher
     business volume      Umsatz
     circulation          Umlauf
     circulation stimulus Umlaufimpuls
     club fee             Vereinsbeitrag
     electronic purse     elektronische Geldbörse
     gold backing         Golddeckung
+    lender               Darlehensgeber
     price fixing         Preisbindung
+    pawnshop             Pfandleihe
     upward revaluation   Aufwertung 
     value added tax      Umsatzsteuer
 
