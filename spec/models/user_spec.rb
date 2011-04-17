@@ -103,10 +103,10 @@ describe User do
       end
     end
     describe "authenticate method" do
-      it "should return nil for an invalid email address" #do
-#        nonexistent_user = User.authenticate("bar(at)foo.com", @attr[:password])  
-#        nonexistent_user.should be_nil
-#      end
+      it "should return nil for an invalid email address" do
+        nonexistent_user = User.authenticate("bar(at)foo.com", @attr[:password])  
+        nonexistent_user.should be_nil
+      end
   
       it "should return nil on email/password mismatch" do
         wrong_password_user = User.authenticate(@attr[:email], "wrongpass")  

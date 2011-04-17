@@ -4,7 +4,7 @@ MICROPAYMENT
 Overview
 --------
 
-There are officially printed credit notes (OPCN) in values of 5 C 10 C and 20 C and credit on your electronic purse.
+There are officially printed credit notes (OPCN) in values of 1 C, 2 C , 5 C, 10 C and 20 C and credit on your electronic purse.
 Payments of smaller amounts are not possible with credit notes.
 Payments of small amounts (up to 100 C (credits)) is possible in an electronic way.
 Self printed credit notes (SPCN) can be used to facilitate payment.
@@ -164,13 +164,12 @@ Ideas
 
 ### Idea 1:
 The circulation is 3 to 4 times higher compared to Euro. (Source FAQ www.regio-im-oberland.de)
--> Request to reduce the VAT to a quarter (5% and 2 %).
+-> Replace all taxes with a 10% VAT tax and do not distinguish between private and business.
+-> Add a fee from 10% to 40% depending on the distance of the persons involved exceeding more than one 1 kohr = 21 km.
+-> You can vote for which projects 50% of the taxes and fees are used.
+-> there are special accounts for the state and regions and they have the same rules.
 
 ### Idea 2:
-Each new participant needs a certain amount of money to participate in trading (my personal guess: 100 C).
--> The club fee should be equal to that amount.
-
-### Idea 3:
 Take gold and silver as securities.(1 troy ounce = 31,1035g)
 Price: Silver: ~20Euro/troy ounce Gold: ~1000Euro/troy ounce
 -> commodities are the currencies
@@ -178,7 +177,11 @@ Price: Silver: ~20Euro/troy ounce Gold: ~1000Euro/troy ounce
 => a specialized pawnshop gives the credit for the given security (see PfandlV).
 => a fee must ensure the insurance payments for the gold an silver stored.(preferable in per cent
 of the stored commodities.
-=> 
+
+### Idea 3:
+Each new participant needs a certain amount of money to participate in trading (my personal guess: 60 SC).
+-> But there should be no club and club fee - everyone can participate.
+-> You can sponsor the currency and there is a ranking.
 
 ### Idea 4:
 Let the payment platform produce its own money:
@@ -215,6 +218,8 @@ Exceptions:
     B     |   3000|            50|1000|         50|       1000|0,015 0,16 0,25     |
     C     |     89|            54|   0|         54|         89|0,011               |
 
+if the money on the special accounts is not used, then it flows back to all users.
+
 ### Idea 8:
 Exchange for other commodities/energy
 -> no idea - ask Kuno again
@@ -240,6 +245,27 @@ Franchise the pawnshops.
 Loans are given personally or by the gouvernment.
 The risk holds the lender.
 
+### Idea 13:
+Let other regional currencies use the same system.
+
+### Idea 14:
+All languages and regional dialects should be choosable.
+
+### Idea 15:
+Use 10 as the base -> no fractions(?).
+     0%  person           I
+    10%  family           children, parents
+    20%  local group      friends, wagnis 3
+    30%  district         messestadt
+    40%  city             munich
+    50%  one kohr         21 km
+    60%  rural district   munich
+    70%  province         bavaria
+    80%  country          germany
+    90%  kontinent        europe
+   100%  planet           earth
+If you leave the world, it costs you 50% of your assets :-).   
+   
 GUI:
 
     o rate the transaction process
