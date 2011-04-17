@@ -199,10 +199,12 @@ Suggest prices for services.
 ### Idea 7:
 Circulation stimulus:
 -> every quarter for OPCN
+
     20 C -> 0,5  C = 10%/year
     10 C -> 0,25 C = 10%/year
      5 C -> 0,10 C = 8%/year
 -> every day at midnight for credit or when placed on deposit for all days since SPCN was printed
+
        1 -    10 C -> 0 C 
       10 -   100 C -> 0,0003C/C = 10,95 %
      100 -   500 C -> 0,0004C/C = 14,60 %
@@ -253,6 +255,7 @@ All languages and regional dialects should be choosable.
 
 ### Idea 15:
 Use 10 as the base -> no fractions(?).
+
      0%  person           I
     10%  family           children, parents
     20%  local group      friends, wagnis 3
@@ -264,6 +267,7 @@ Use 10 as the base -> no fractions(?).
     80%  country          germany
     90%  kontinent        europe
    100%  planet           earth
+
 If you leave the world, it costs you 50% of your assets :-).   
    
 GUI:
