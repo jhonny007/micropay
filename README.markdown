@@ -4,10 +4,22 @@ MICROPAYMENT
 Overview
 --------
 
-There are officially printed credit notes (OPCN) in values of 1 C, 2 C , 5 C, 10 C and 20 C and credit on your electronic purse.
-Payments of smaller amounts are not possible with credit notes.
+The goal of this project is high: Provide an electronic currency, backed with commodities or current currencies, that can be used as an alternative for the current financial system but without the hassles that come with it.
+
+Some key features
+ - free 
+ - ranking of sponsors
+ - simplicity (it should be usable by 4 year old children)
+ - 100% transparency (you can see every transaction)
+ - interest free (to avoid uncontrolled growth and speculation)
+ - know your partners (build trust to the people who live with you)
+
+other ideas:
+ - Self printed credit notes (SPCN) can be used to facilitate payment.
+ - automated taxes
+ - circulation stimulus
+
 Payments of small amounts (up to 100 C (credits)) is possible in an electronic way.
-Self printed credit notes (SPCN) can be used to facilitate payment.
 
 
 Usecases
