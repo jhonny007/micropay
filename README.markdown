@@ -256,17 +256,17 @@ All languages and regional dialects should be choosable.
 ### Idea 15:
 Use 10 as the base -> no fractions(?).
 
-     0%  person           I
-    10%  family           children, parents
-    20%  local group      friends, wagnis 3
-    30%  district         messestadt
-    40%  city             munich
-    50%  one kohr         21 km
-    60%  rural district   munich
-    70%  province         bavaria
-    80%  country          germany
-    90%  kontinent        europe
-   100%  planet           earth
+      0%  person           I
+     10%  family           children, parents
+     20%  local group      friends, wagnis 3
+     30%  district         messestadt
+     40%  city             munich
+     50%  one kohr         21 km
+     60%  rural district   munich
+     70%  province         bavaria
+     80%  country          germany
+     90%  kontinent        europe
+    100%  planet           earth
 
 If you leave the world, it costs you 50% of your assets :-).   
    
