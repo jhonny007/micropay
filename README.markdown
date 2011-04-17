@@ -7,17 +7,18 @@ Overview
 The goal of this project is high: Provide an electronic currency, backed with commodities or current currencies, that can be used as an alternative for the current financial system but without the hassles that come with it.
 
 Some key features
- - free 
- - ranking of sponsors
- - simplicity (it should be usable by 4 year old children)
- - 100% transparency (you can see every transaction)
- - interest free (to avoid uncontrolled growth and speculation)
- - know your partners (build trust to the people who live with you)
+ * free 
+ * ranking of sponsors
+ * simplicity (it should be usable by 4 year old children)
+ * 100% transparency (you can see every transaction)
+ * interest free (to avoid uncontrolled growth and speculation)
+ * know your partners (build trust to the people who live with you)
 
 other ideas:
- - Self printed credit notes (SPCN) can be used to facilitate payment.
- - automated taxes
- - circulation stimulus
+ * Self printed credit notes (SPCN) can be used to facilitate payment.
+ * automated taxes
+ * circulation stimulus
+ * see the list of ideas at the end
 
 Payments of small amounts (up to 100 C (credits)) is possible in an electronic way.
 
