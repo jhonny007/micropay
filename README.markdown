@@ -28,56 +28,56 @@ Payments of small amounts (up to 100 C (credits)) is possible in an electronic w
 Usecases
 --------
 
-The use cases have two participants (Person A and B) and a total amount of 25 credits. The amount is always constant.
+The use cases have two participants (Person A and B) and a total amount of 25,00 credits. The amount is always constant.
 
 
 ### UC1 - electronic payment only
 
               Person A                    Person B
-    Step 1    10 C                         5 C
-              10 OPCN
+    Step 1    10,00 C                      5,00 C
+              10,00 OPCN
 
-    Step 2    Person A buys something for 3 credits from Person B electronically
+    Step 2    Person A buys something for 3,00 credits from Person B electronically
 
-    Step 3     7 C                         8 C
-              10 OPCN
+    Step 3     7,00 C                      8,00 C
+              10,00 OPCN
 
 
 ### UC2 - combined cash and electronic payment
 
               Person A                    Person B
-    Step 1     7 C                         8 C
-              10 OPCN                        
+    Step 1     7,00 C                      8,00 C
+              10,00 OPCN                        
 
-    Step 2    Person A buys something for 3 credits from Person B with a credit note of value 10
-              Person A gets back 7 credits from Person B
+    Step 2    Person A buys something for 3,00 credits from Person B with a credit note of value 10
+              Person A gets back 7,00 credits from Person B
 
-    Step 3    14 C                         1 C
-                                          10 OPCN 
+    Step 3    14,00 C                      1,00 C
+                                          10,00 OPCN 
 
 
 ### UC3 - print a credit note
 
     Step 1    Person A
-              14 C
+              14,00 C
 
-    Step 2    Person A prints a credit note of value 10
+    Step 2    Person A prints a credit note of value 10,00
 
-    Step 3     4 C
-              10 SPCN(A)
+    Step 3     4,00 C
+              10,00 SPCN(A)
 
 
 ### UC4 - cash payment
 
               Person A                    Person B
-    Step 1     4 C                         1 C
-              10 SPCN (A)                 10 OPCN
+    Step 1     4,00 C                      1,00 C
+              10,00 SPCN (A)              10,00 OPCN
 
     Step 2    Person A buys something from Person B and gives him his printed credit note of value 10
 
-    Step 3     4 C                         1 C
-                                          10 OPCN
-                                          10 SPCN (A)
+    Step 3     4,00 C                      1,00 C
+                                          10,00 OPCN
+                                          10,00 SPCN (A)
 
             
 ### UC5/1 - validating of a credit note - credit note is valid
@@ -88,15 +88,15 @@ The use cases have two participants (Person A and B) and a total amount of 25 cr
 ### UC6 - deposit a credit note to your electronic purse
 
                                            Person B
-    Step 1                                  1 C
-                                           10 OPCN
-                                           10 SPCN(A)
+    Step 1                                  1,00 C
+                                           10,00 OPCN
+                                           10,00 SPCN(A)
 
     Step 2    Person B deposits 10 credits to her electronic purse
 
-    Step 3                                 11 C
-                                           10 OPCN 
-                                           10 SPCN(A) (invalid)
+    Step 3                                 11,00 C
+                                           10,00 OPCN 
+                                           10,00 SPCN(A) (invalid)
 
 
 ### UC5/2 - validating of a credit note - credit note is invalid
@@ -135,6 +135,7 @@ Security
  * Costs should be kept to a minimum.
  * Make all users public. Photo and Name.
  * Make the electronic purse balance public up to 100 C (e.g. `?.???.?56,479 C`)
+
 Conclusion: *Keep it simple*.
 
 Implementation Notes
@@ -152,13 +153,16 @@ Implementation Notes
 
  * Basic Infrastructure
  * Object model
- * Web-Application without authentication
- * 10 predefined participants with 50 C each
+ * Web-Application with authentication
+ * User pictures from gravatar
+ * ranking of sponsors
  * UC1
- * show business volume
+ * show business volume (all users and per user)
+ * ranking by volume
 
 ### Iteration 2
 
+ * account for state and regions
 
 Open questions
 --------------
@@ -271,20 +275,63 @@ All languages and regional dialects should be choosable.
 ### Idea 15:
 Use 10 as the base -> no fractions(?).
 
-      0%  person           I
-     10%  family           children, parents
-     20%  local group      friends, wagnis 3
-     30%  district         messestadt
-     40%  city             munich
-     50%  one kohr         21 km
-     60%  rural district   munich
-     70%  province         bavaria
-     80%  country          germany
-     90%  kontinent        europe
-    100%  planet           earth
+      0% (  0%) person           I
+     10% ( ~9%) family           children, parents
+     20% (~17%) local group      friends, wagnis 3
+     30% (~23%) district         messestadt
+     40% (~29%) city             munich
+     50% (~33%) one kohr         21 km
+     60% (~37%) rural district   munich
+     70% (~41%) province         bavaria
+     80% (~44%) country          germany
+     90% (~47%) kontinent        europe
+    100% ( 50%) planet           earth
 
-If you leave the world, it costs you 50% of your assets :-).   
+If you leave the planet, it costs you 50% of your assets :-).   
+-> calculation is exact to 4 decimal points.
    
+### Idea 16:
+There is the possibility to fund the following accounts:
+
+ * own account
+ * micropay account
+ * state account
+
+### Idea 17:
+Print stamps
+
+### Idea 18:
+identify persons with face api
+
+### Idea 19:
+different accounts with a time currency of hours.
+
+MODEL:
+
+     ------
+     |user|
+     ------
+       |     ---------1
+       |-----|account|----|
+            *---------    |*
+               1|       ---------
+                |-------|payment|
+                       *---------
+                           1|     -----
+                            |-----|tax|
+                                 *-----              
+
+taxes are a special kind of payment
+
+ROLES:
+ 
+ * user (4years, 20 years, 50 years and 70 years old)
+ * disabled users
+ * pawnshop (can register funds)
+ * state (can spend the money on his account)
+ * admin (can create pawnshop)
+ * sponsor (can fund the project)
+
 GUI:
 
     o rate the transaction process
